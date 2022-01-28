@@ -13,42 +13,63 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CZilla+Slab:400,400i,700%7CRoboto+Mono&display=swap">
         
         <style type="text/css">
             .dropdown:hover .dropdown-menu {
                 display: block;
             }
+            #github:hover {
+                width: 70px
+            }
         </style>
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm bg-dark">
-            <div class="navbar-brand">
-                <div class="nav-item"> <a class="nav-link active" href="https://creativepenguin.github.io"> Winston Peng </a> </div>
-            </div>
-            <div class="collapse navbar-collapse show">
-                <div class="nav-item"> <a class="nav-link" href="https://creativepenguin.github.io"> Home </a> </div>
-                <div class="nav-item"> <a class="nav-link" href="resources/resume.pdf"> Resume </a></div>
-                <div class="nav-item dropdown"> 
-                    <a class="nav-link dropdown-toggle" href="https://github.com/creativepenguin" data-toggle="dropdown" aria-expanded="false"> Projects </a> 
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="https://github.com/CreativePenguin/stuy-cs"> High School Homework </a>
-                        <a class="dropdown-item" href="https://github.com/CreativePenguin/d-dice"> Dnd Dice App </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-lg-4">
-                    <img class="portrait" src="resources/headshot.jpg" width="500px">
-                </div>
-                <div class="col-12 col-lg-8">
-                    <a href="https://github.com/creativepenguin">
-                        <i class="fab fa-github big-icon"></i>
+                <nav class="navbar navbar-expand-sm bg-dark">
+                    <div class="navbar-brand">
+                        <div class="nav-item"> <a class="nav-link active" href="https://creativepenguin.github.io"> Winston Peng </a> </div>
+                    </div>
+                    <div class="collapse navbar-collapse show">
+                        <div class="nav-item"> <a class="nav-link" href="https://creativepenguin.github.io"> Home </a> </div>
+                        <div class="nav-item"> <a class="nav-link" href="resources/resume.pdf"> Resume </a></div>
+                        <div class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle" href="https://github.com/creativepenguin" data-toggle="dropdown" aria-expanded="false"> Projects </a> 
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://github.com/CreativePenguin/stuy-cs"> High School Homework </a>
+                                <a class="dropdown-item" href="https://github.com/CreativePenguin/d-dice"> Dnd Dice App </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="img-thumbnail" src="resources/headshot.jpg">
+                    <a href="https://github.com/CreativePenguin">
+                        <img id="github" src="resources/GitHub-Mark-64px.png">
                     </a>
                 </div>
+                <div class="col-sm-8">
+                    <h1>About Me</h1>
+                    Student at University at Buffalo
+                </div>
             </div>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="img-thumbnail" src="resources/stuy-quiz-game.png">
+                </div>
+                <div class="col-sm-8">
+                    <h1>Stuy Softdev School Project</h1>
+                    <b>Tools Used</b>: HTML5, CSS, Python, Flask, Jinja, SQLite, RestAPI
+                    <br>
+                    Web trivia game. Gets data from 
+                </div>
+            </div>
+
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
