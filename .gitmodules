@@ -1,0 +1,3 @@
+[submodule "HumanJello"]
+	path = HumanJello
+	url = git@github.com:snichol00/HumanJello.git
