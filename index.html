@@ -14,13 +14,18 @@
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CZilla+Slab:400,400i,700%7CRoboto+Mono&display=swap">
-        
+        <script src="https://kit.fontawesome.com/8652b3eb34.js" crossorigin="anonymous"></script>       
+
         <style type="text/css">
             .dropdown:hover .dropdown-menu {
                 display: block;
             }
             .github-icon:hover {
                 width: 70px
+            }
+            .icon-link {
+                text-decoration: none;
+                border: none;
             }
         </style>
     </head>
@@ -35,9 +40,9 @@
                         <div class="nav-item"> <a class="nav-link" href="https://creativepenguin.github.io"> Home </a> </div>
                         <div class="nav-item"> <a class="nav-link" href="resources/resume.pdf"> Resume </a></div>
                         <div class="nav-item dropdown"> 
-                            <a class="nav-link dropdown-toggle" href="https://github.com/creativepenguin" data-toggle="dropdown" aria-expanded="false"> Projects </a> 
+                            <a class="nav-link dropdown-toggle" href="https://github.com/creativepenguin" data-toggle="dropdown" aria-expanded="false"> Current Projects </a> 
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="https://github.com/CreativePenguin/stuy-cs"> High School Homework </a>
+                                <a class="dropdown-item" href="https://github.com/CreativePenguin/flix"> Codepath IOS Apps </a>
                                 <a class="dropdown-item" href="https://github.com/CreativePenguin/d-dice"> Dnd Dice App </a>
                             </div>
                         </div>
@@ -55,10 +60,22 @@
                     <br>
                     This website is currently under construction
                     <br>
-                    <a href="https://github.com/CreativePenguin">
+                    <!-- <ul class="network-icon">
+                        <li style="display: inline;">
+                            <a href="https://github.com/CreativePenguin">
+                                <img class="github-icon" src="resources/GitHub-Mark-64px.png">
+                            </a>
+                        </li>
+                        <li style="display: inline;">
+                            <a href="https://www.linkedin.com/in/winston-peng-1851bb230/">
+                                <img class="github-icon" src="resources/In-Blue-72.png" style="width: 64px;">
+                            </a>
+                        </li>
+                    </ul> -->
+                    <a href="https://github.com/CreativePenguin" class="icon-link">
                         <img class="github-icon" src="resources/GitHub-Mark-64px.png">
                     </a>
-                    <a href="https://www.linkedin.com/in/winston-peng-1851bb230/">
+                    <a href="https://www.linkedin.com/in/winston-peng-1851bb230/" class="icon-link">
                         <img class="github-icon" src="resources/In-Blue-72.png" style="width: 64px;">
                     </a>
                 </div>
@@ -68,22 +85,27 @@
 
             <div class="row">
                 <div class="col-sm-4">
-                    <img class="img-thumbnail" src="resources/stuy-quiz-game.png">
+                    <!-- <img class="img-thumbnail" src="resources/stuy-quiz-game.png"> -->
+                    <img class="img-thumbnail" src="resources/stuy-op-board.png">
                 </div>
                 <div class="col-sm-8">
                     <h1>
                         Stuyvesant Softdev School Project 
-                        <a href="https://github.com/CreativePenguin/nounGenerator">
-                            <img src="resources/GitHub-Mark-32px.png">
+                        <a href="https://github.com/snichol00/HumanJello" class="icon-link">
+                            <i class="fa-brands fa-github">
+                            </i>
+                        </a>
+                        <a href="https://youtu.be/OmoZDhp1rRk" class="icon-link">
+                            <i class="fa-brands fa-youtube"></i>
                         </a>
                     </h1>
                     <b>Tools Used</b>: HTML5, CSS, Python, Flask, Jinja, SQLite, RestAPI
                     <br>
-                    Web trivia game. Website would use SQLite to keep track of each users data and scores. <br>
-                    Gets data from Open Trivial API and Wikipedia API to ask trivia questions, doing well on 
-                    the trivia questions lets people take control of more countries, with the end goal being to
-                    take control of as many coutnries as possible. <br>
-                    Group project, worked with classmates Derek Leung, and Ahmed Sultan.
+                    Student Opportunity Bulletin Board<br>
+                    Gives both teachers and students a hub to post about interesting events taking place. <br>
+                    Website uses google oauth api to store logins, and the google calendar api to keep
+                    track of deadlines<br><br>
+                    Group project, worked with classmates Sophie Nichol, Lauren Pehlivanian, and Jason Zheng
                 </div>
             </div>
 
@@ -96,8 +118,11 @@
                 <div class="col-sm-8">
                     <h1>
                         UB Malloc School Project
-                        <a href="https://github.com/ub-cse220-f21/pa4-malloc-CreativePenguin">
+                        <!-- <a href="https://github.com/ub-cse220-f21/pa4-malloc-CreativePenguin">
                             <img src="resources/GitHub-Mark-32px.png">
+                        </a> -->
+                        <a href="https://github.com/ub-cse-220-f21/pa4-malloc-CreativePenguin" class="icon-link">
+                            <i class="fab-brands fa-github"></i>
                         </a>
                     </h1>
                     <b>Tools Used</b>: C, Makefile
