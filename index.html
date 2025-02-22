@@ -10,7 +10,7 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/default-avatar.ico" type="image/x-icon">
 
   <!--
     - custom css link
@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
 <body>
@@ -164,20 +165,16 @@
 
         <ul class="navbar-list">
 
-          <li class="navbar-item">
+          <!-- <li class="navbar-item">
             <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+          </li> -->
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link active" data-nav-link>Resume</button>
           </li>
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
           </li>
 
           <li class="navbar-item">
@@ -196,7 +193,8 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <!-- <article class="about active" data-page="about"> -->
+      <article class="about">
 
         <header>
           <h2 class="h2 article-title">About me</h2>
@@ -403,7 +401,26 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="resume active" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a recent computer science graduate looking for the opportunity to create applications on a larger scale that can make life easier for people.
+            <!-- I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.  -->
+          </p>
+
+          <p>
+            My resume consists of applications developed for both web and ios, as well as extensive experience in managing databases.
+            <!-- I focus on making projects that would make life easier for myself, or give people the opportunity to share things with other people that would make life eaiser for them. -->
+            My development process focuses not only on making readable code, but also on creating easy, automated deployment methods.
+            <!-- Each of my projects have a focus on creating a product that is not only easy to use, but also easy to develop for, and contribute to. -->
+            <!-- My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.  -->
+          </p>
+        </section>
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
@@ -423,23 +440,29 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">University at Buffalo</h4>
-
-              <span>2020 — 2024</span>
+              <div class="timeline-item-title-container">
+                <h4 class="h4 timeline-item-title">University at Buffalo</h4>
+                <span class="timeline-date">2020 — 2024</span>
+              </div>
 
               <p class="timeline-text">
+                Teaching Assistant for Intro to Discrete Structures 2023-2024<br>
+                Research Assistant for pgAQP Plugin<br>
+                Logistics and Food Lead for UB Hackathon<br>
+                Vice President of Pokemon Club
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Stuyvesant High School</h4>
-
-              <span>2016 — 2020</span>
+              <div class="timeline-item-title-container">
+                <h4 class="h4 timeline-item-title">Stuyvesant High School</h4>
+                <span class="timeline-date">2016 — 2020</span>
+              </div>
 
               <p class="timeline-text">
-                Robotics Club -- Head of Freshmen Orientation
+                Head of Freshmen Orientation of Robotics Club
               </p>
 
             </li>
@@ -455,51 +478,36 @@
               <ion-icon name="book-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3">Technical Experience</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
+              <div class="timeline-item-title-container">
+                <h4 class="h4 timeline-item-title">Front-end Developer Intern</h4>
+                <span class="timeline-date">Apr 2022 — Apr 2023</span>
+              </div>
+              <span>SpeakHIRE</span>
 
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                Use React to create onboarding form webpages for admin users of the site.<br>
+                Use Figma to design and collaborate on website formatting.
               </p>
 
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
+              <div class="timeline-item-title-container">
+                <h4 class="h4 timeline-item-title">Android Developer Intern</h4>
+                <span class="timeline-date">Jun 2018 - Aug 2018</span>
+              </div>
+              <span>Legion WFM</span>
 
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                Add Google Analytics into Android App using Firebase SDK to track usage statistics for features
               </p>
-
             </li>
 
           </ol>
@@ -508,7 +516,7 @@
 
         <section class="skill">
 
-          <h3 class="h3 skills-title">My skills</h3>
+          <h3 class="h3 skills-title">My Skills</h3>
 
           <ul class="skills-list content-card">
 
@@ -642,6 +650,36 @@
 
           <ul class="project-list">
 
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://test-00-c77de.web.app">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-dice-calculator2.png" alt="Angular Dice Calculator App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dice Calculator</h3>
+
+                <p class="project-category">
+                  <i class="project-icon devicon-angular-plain"></i>
+                  <i class="project-icon devicon-tailwindcss-plain"></i>
+                  <i class="project-icon devicon-firebase-plain-wordmark"></i>
+                  <i class="project-icon devicon-sass-original"></i>
+                  <i class="project-icon devicon-karma-plain"></i>
+                  <i class="project-icon devicon-rxjs-plain"></i>
+                  <i class="project-icon devicon-angularmaterial-plain"></i>
+                </p>
+                <p class="project-category">Angular Project</p>
+                <p class="project-category">
+                  Instantly calculates probability of reaching certain numbers when rolling a set of dice
+                </p>
+              </a>
+            </li>
+
             <li class="project-item active">
               <a href="https://project442jjaws.mooo.com/jjaws/">
                 <figure class="project-img">
@@ -649,11 +687,17 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project442jjaws.png" alt="TA Scheduler" loading="lazy">
+                  <img src="./assets/images/project442jjaws2.png" alt="TA Scheduler" loading="lazy">
                 </figure>
-                <h3 class="project-title">Online OH (A Scheduler Aid for TA's)</h3>
+                <h3 class="project-title">Online OH</h3>
+                <p class="project-category">
+                  <i class="project-icon devicon-php-plain"></i>
+                  <i class="project-icon devicon-mariadb-original-wordmark"></i>
+                  <i class="project-icon devicon-apache-line-wordmark"></i>
+                </p>
 
                 <p class="project-category">PHP Project with phpMyAdmin</p>
+                <p class="project-category">Helps teaching assistants coordinate schedules, and communicate with students</p>
               </a>
             </li>
 
@@ -664,143 +708,137 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
+                  <!-- Image Dimensions: 2880 x 1598 -->
                   <img src="./assets/images/project312jesse.png" alt="Project 312" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Picture Sharing Site</h3>
+                <h3 class="project-title">
+                  Picture Sharing Site &nbsp;
+                </h3>
+
+                <p class="project-category">
+                  <!-- <i style="font-size: 1em;" class="devicon-mongodb-plain-wordmark"></i> -->
+                  <i class="project-icon devicon-mongodb-plain-wordmark"></i>
+                  <i class="project-icon devicon-flask-original-wordmark"></i>
+                  <i class="project-icon devicon-uwsgi-plain"></i>
+                  <i class="project-icon devicon-digitalocean-original-wordmark"></i>
+                  <i class="project-icon devicon-socketio-original-wordmark"></i>
+                  <i class="project-icon devicon-docker-plain-wordmark"></i>
+                </p>
 
                 <p class="project-category">Flask Project with Websockets</p>
+                <p class="project-category">Allows account holders to send images to other users</p>
+
+                <!-- <p class="project-category">
+                  <p>Flask <i class="project-icon devicon-flask-original"></i> </p>
+                  <p>Apache <i class="project-icon devicon-apache-plain"></i> </p>
+                  <p>MySQL <i class="project-icon devicon-mysql-original"></i> </p>
+                  <p>Digital Ocean <i class="project-icon devicon-digitalocean-original"></i> </p>
+                </p> -->
+
+                <!-- <p class="project-category">
+                  <i class="project-icon devicon-flask-original"></i>
+                  <i class="project-icon devicon-apache-plain"></i>
+                  <i class="project-icon devicon-mysql-original"></i>
+                  <i class="project-icon devicon-digitalocean-original"></i>
+                </p> -->
+
+                <!-- <p class="project-category">
+                  <img class="project-icon-image" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original-wordmark.svg" />
+                  <img class="project-icon-image" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-plain-wordmark.svg" />
+                  <img class="project-icon-image" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apache/apache-plain-wordmark.svg" />
+                  <img class="project-icon-image" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/digitalocean/digitalocean-original-wordmark.svg" />
+                </p> -->
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="assets/images/project-speakhire2.png">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-off-outline"></ion-icon>
+                  </div>
+
+                  <!-- Dimensions of image: 2880 x 1484 -- this is the only image with dimensions that are difficult to change -->
+
+                  <img src="./assets/images/project-speakhire2.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SpeakHIRE Admin Page</h3>
+
+                <p class="project-category">
+                  <i class="project-icon devicon-react-original-wordmark"></i>
+                  <i class="project-icon devicon-postgresql-plain-wordmark"></i>
+                  <i class="project-icon devicon-trello-plain-wordmark"></i>
+                  <i class="project-icon devicon-oauth-plain"></i>
+                  <i class="project-icon devicon-materialui-plain"></i>
+                  <i class="project-icon devicon-figma-plain"></i>
+                </p>
+
+                <p class="project-category">
+                  React Internship Project
+                </p>
+                <p class="project-category">
+                  Webpage created to be used in-house to help employees track, and maintain connections with clients
+                </p>
 
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+              <a href="https://creativepenguin.github.io/ggj-2024/">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/project-ggj.png" alt="global game jam 2024" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">Tamago Tripath-e</h3>
 
-                <p class="project-category">Web design</p>
-
+                <p class="project-category">
+                  <i class="project-icon devicon-react-original-wordmark"></i>
+                  <i class="project-icon devicon-githubactions-plain"></i>
+                </p>
+                <p class="project-category">React Project</p>
+                <p class="project-category">
+                  Series of minigames created themed around Unviersity at Buffalo President Satish K Tripathi
+                </p>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="app design">
+              <a href="assets/images/project-rate-my-professor.png">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <ion-icon name="eye-off-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/project-rate-my-professor.png" alt="metaspark" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
+                <h3 class="project-title">UB Rate My Professor</h3>
 
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
+                <p class="project-category">
+                  <i class="project-icon devicon-apple-original"></i>
+                  <i class="project-icon devicon-swift-plain-wordmark"></i>      
+                  <i class="project-icon devicon-xcode-plain"></i>
+                </p>
+                <p class="project-category">IOS App</p>
+                <p class="project-category">
+                  Allows users to give professors star ratings, and share opinions about each professor's teaching ability
+                </p>
 
               </a>
             </li>
 
           </ul>
+
+          <iframe width="100%" height="500px" src="https://sway.cloud.microsoft/s/6RpvAa9J8If4x7nA/embed" frameborder="0" marginheight="0" marginwidth="0" max-width="100%" sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-same-origin allow-scripts" scrolling="no" style="border: none; max-width: 100%; max-height: 100vh" allowfullscreen mozallowfullscreen msallowfullscreen webkitallowfullscreen></iframe>
 
         </section>
 
